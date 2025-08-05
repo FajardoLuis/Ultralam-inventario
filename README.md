@@ -32,3 +32,47 @@ Se desarrolló una plataforma web que permite:
 - [Uso](#uso)
 - [Contribución](#contribución)
 - [Roadmap](#roadmap)
+## ⚙️ Instalación
+
+Consulta el archivo [`INSTALL.md`](./INSTALL.md) para ver los pasos detallados de instalación local y configuración de GlassFish, base de datos y despliegue en Heroku.
+
+---
+
+## 🛠️ Configuración
+
+Asegúrate de configurar:
+- Variables de entorno de conexión a la base de datos.
+- El archivo `web.xml` con los servlets necesarios.
+- El archivo de despliegue en Heroku (si aplica).
+
+---
+
+## 👨‍💻 Uso del Sistema
+
+1. Inicia sesión con tu cuenta.
+2. Registra nuevas láminas de inventario.
+3. Realiza cortes personalizados y registra fragmentos.
+4. Consulta el inventario útil.
+5. Exporta reportes.
+
+---
+
+## 📂 Estructura del Proyecto
+
+```text
+Ultralam-inventario/
+│
+├── src/                         # Código fuente Java
+│   ├── controller/              # Servlets
+│   ├── model/                   # Clases del Modelo (entidades)
+│   ├── dao/                     # Acceso a la BD
+│
+├── web/                         # Archivos JSP
+│   ├── login.jsp
+│   ├── dashboard.jsp
+│   ├── registro.jsp
+│
+├── resources/                   # Archivos de configuración
+├── INSTALL.md                   # Guía de instalación
+├── README.md                    # Este documento
+
